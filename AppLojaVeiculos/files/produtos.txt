@@ -1,0 +1,10 @@
+HondaCivic;1;80000;Sim;Preto;200;Esportivo;C
+GMCruze;2;80000;Sim;Prata;150;Esportivo;C
+Motana;3;50000;Não;Prata;100;Picape;C
+FiatFiorino;4;70000;Não;Branca;80;Furgão;C
+Porsche911;5;800000;Sim;Vermelha;800;Super-esportivo;C
+YamahaYZF;6;35000;Sim;Roxo;Sim;150;M
+KawasakiNinja400;7;37000;Não;Verde;Não;400;M
+BMWS1000RR;8;80000;Não;AzuleBranco;Não;1000;M
+HondaCBR650R;9;60000;Sim;Vermelha;Sim;650;M
+HondaCG150;10;15000;Sim;Preta;Não;150;M

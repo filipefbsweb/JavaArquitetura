@@ -1,0 +1,4 @@
+João;123.123.123-12;joao@gmail.com
+Mario;135.857.157-13;mario@gmail.com
+Junior;254.475.197-37;junior@bol.com.br
+Paulo;825.714.964-28;paulo@hotmail.com
