@@ -1,5 +1,5 @@
-Honda Civic;1;80000;Sim;Preto;200;Esportivo
-GM Cruze;2;80000;Sim;Prata;150;Esportivo
-Motana;3;50000;Não;Prata;100;Picape
-Fiat Fiorino;4;70000;Não;Branca;80;Furgão
-Porsche 911;5;800000;Sim;Vermelha;800;Super-esportivo
+Honda Civic;1;80000;true;Preto;200;Esportivo;1
+GM Cruze;2;80000;false;Prata;150;Esportivo;2
+Motana;3;50000;false;Prata;100;Picape;3
+Fiat Fiorino;4;70000;false;Branca;80;Furgão;4
+Porsche 911;5;800000;true;Vermelha;800;Super-esportivo;5

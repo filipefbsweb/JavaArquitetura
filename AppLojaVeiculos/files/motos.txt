@@ -1,5 +1,5 @@
-Yamaha YZF;6;35000;Sim;Roxo;Sim;150
-Kawasaki Ninja 400;7;37000;Não;Verde;Não;400
-BMW S1000 RR;8;80000;Não;Azul e Branco;Não;1000
-Honda CBR 650R;9;60000;Sim;Vermelha;Sim;650
-Honda CG 150;10;15000;Sim;Preta;Não;150
+YamahaYZF;6;35000;true;Roxo;true;150;6
+KawasakiNinja400;7;37000;false;Verde;false;400;7
+BMWS1000RR;8;80000;false;AzuleBranco;false;1000;8
+HondaCBR650R;9;60000;true;Vermelha;false;650;9
+HondaCG150;10;15000;true;Preta;false;150;10

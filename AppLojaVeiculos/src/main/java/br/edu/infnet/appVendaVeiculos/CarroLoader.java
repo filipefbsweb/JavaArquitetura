@@ -10,6 +10,7 @@ import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import br.edu.infnet.appVendaVeiculos.domain.Carro;
+import br.edu.infnet.appVendaVeiculos.domain.Vendedor;
 import br.edu.infnet.appVendaVeiculos.service.CarroService;
 
 @Order(4)
@@ -34,7 +35,6 @@ public class CarroLoader implements ApplicationRunner {
 			campos = linha.split(";");
 			
 			Carro carro = new Carro();
-			
 			carro.setNome(campos[0]);
 			carro.setCodigo(Integer.valueOf(campos[1]));
 			carro.setPreco(Float.valueOf(campos[2]));
@@ -42,6 +42,11 @@ public class CarroLoader implements ApplicationRunner {
 			carro.setCor(campos[4]);
 			carro.setCavalosPotencia(Integer.valueOf(campos[5]));
 			carro.setTipoCarro(campos[6]);
+			
+			Vendedor vendedor = new Vendedor();
+			vendedor.setId(Integer.valueOf(campos[7]));
+			
+			carro.setVendedor(vendedor);
 			
 			carroService.incluir(carro);
 			

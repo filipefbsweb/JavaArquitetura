@@ -10,6 +10,7 @@ import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import br.edu.infnet.appVendaVeiculos.domain.Moto;
+import br.edu.infnet.appVendaVeiculos.domain.Vendedor;
 import br.edu.infnet.appVendaVeiculos.service.MotoService;
 
 @Order(3)
@@ -34,14 +35,18 @@ public class MotoLoader implements ApplicationRunner {
 			campos = linha.split(";");
 			
 			Moto moto = new Moto();
-			
 			moto.setNome(campos[0]);
-			moto.setCodigo(Integer.parseInt(campos[1]));
-			moto.setPreco(Float.parseFloat(campos[2]));
-			moto.setEstoque(Boolean.parseBoolean(campos[3]));
+			moto.setCodigo(Integer.valueOf(campos[1]));
+			moto.setPreco(Float.valueOf(campos[2]));
+			moto.setEstoque(Boolean.valueOf(campos[3]));
 			moto.setCor(campos[4]);
-			moto.setIncluiCapacete(Boolean.parseBoolean(campos[5]));
-			moto.setPotenciaCilindradas(Integer.parseInt(campos[6]));
+			moto.setIncluiCapacete(Boolean.valueOf(campos[5]));
+			moto.setPotenciaCilindradas(Integer.valueOf(campos[6]));
+			
+			Vendedor vendedor = new Vendedor();		
+			vendedor.setId(Integer.valueOf(campos[7]));
+			
+			moto.setVendedor(vendedor);
 			
 			motoService.incluir(moto);
 			

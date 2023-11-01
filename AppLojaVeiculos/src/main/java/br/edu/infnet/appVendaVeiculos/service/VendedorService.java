@@ -1,22 +1,24 @@
 package br.edu.infnet.appVendaVeiculos.service;
 
 import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import br.edu.infnet.appVendaVeiculos.domain.Vendedor;
+import br.edu.infnet.appVendaVeiculos.repository.VendedorRepository;
 
 @Service
 public class VendedorService {
-	private Map<String, Vendedor> mapaVendedor = new HashMap<String, Vendedor>();
+
+	@Autowired
+	private VendedorRepository vendedorRepository;
 
 	public void incluir(Vendedor vendedor) {
-		mapaVendedor.put(vendedor.getCpf(), vendedor);
+		vendedorRepository.save(vendedor);
 	}
 
 	public Collection<Vendedor> obterLista() {
-		return mapaVendedor.values();
+		return (Collection<Vendedor>) vendedorRepository.findAll();
 	}
 }
