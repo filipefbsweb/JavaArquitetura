@@ -2,11 +2,15 @@ package br.edu.infnet.appVendaVeiculos.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "TCarro")
 public class Carro extends Produto {
+	@NotNull
 	private int cavalosPotencia;
+
+	@NotNull
 	private String tipoCarro;
 
 	@Override

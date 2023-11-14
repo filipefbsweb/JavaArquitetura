@@ -35,6 +35,7 @@ public class CarroLoader implements ApplicationRunner {
 			campos = linha.split(";");
 			
 			Carro carro = new Carro();
+			
 			carro.setNome(campos[0]);
 			carro.setCodigo(Integer.valueOf(campos[1]));
 			carro.setPreco(Float.valueOf(campos[2]));
@@ -45,11 +46,8 @@ public class CarroLoader implements ApplicationRunner {
 			
 			Vendedor vendedor = new Vendedor();
 			vendedor.setId(Integer.valueOf(campos[7]));
-			
 			carro.setVendedor(vendedor);
-			
 			carroService.incluir(carro);
-			
 			linha = leitura.readLine();
 			
 		}
